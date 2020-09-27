@@ -13,4 +13,18 @@ public class me {
         }
         return latter;
     }
+
+    public ListNode getKthFromEnd1(ListNode head, int k) {
+        int n =0;
+        ListNode temp = head;
+        while (head.next!=null){
+            head = head.next;
+            n++;
+        }
+        for (int i = 0; i < n - k; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
 }
