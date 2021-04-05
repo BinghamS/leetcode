@@ -3,7 +3,7 @@ package test;
 import java.util.ArrayList;
 
 public class ListNode {
-    int val;
+    public int val;
     public ListNode next;
 
     public ListNode(int x){
